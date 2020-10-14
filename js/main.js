@@ -9,11 +9,10 @@ console.log ('chilometri età', chilometri, età);
 var tasso = 0.21;
 
 //prezzo
-var prezzo = chilometri * 0.21;
+var prezzo = chilometri * tasso;
 console.log ('prezzo', prezzo);
 
 //sconti 
-
 if ( età < 18) {
     sconto = ( prezzo / 100 ) * 20;
 } 
@@ -24,6 +23,7 @@ else if ( età > 65) {
     sconto = 0;
 }
 
+//prezzofinale
 var prezzoFinale = prezzo - sconto;
 console.log(sconto);
 
