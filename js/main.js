@@ -25,6 +25,9 @@ else if ( età > 65) {
 
 //prezzofinale
 var prezzoFinale = prezzo - sconto;
-console.log(sconto);
+console.log('sconto', sconto);
 
-document.getElementById ('prezzo-finale').innerHTML = 'Prezzo finale' + ' ' + prezzoFinale + ' ' + '€';
+var prezzoFinaleFixed = prezzoFinale.toFixed(2);
+
+
+document.getElementById ('prezzo-finale').innerHTML = 'Prezzo finale' + ' ' + prezzoFinaleFixed + ' ' + '€';
